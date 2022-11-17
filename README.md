@@ -12,3 +12,5 @@ Click here to install https://github.com/enbyautumn/cohost-show-following/raw/ma
 
 - Currently only runs on the users actual profile page, not on every page the follow button might be seen
 - It should *probably* always work but thats making a lot of assumptions
+
+### Feel free to contribute
