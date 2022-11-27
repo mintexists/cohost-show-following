@@ -16,7 +16,7 @@ let cohostLoaderState = JSON.parse(document.getElementById('__COHOST_LOADER_STAT
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState != 'complete') return;
   if (cohostLoaderState["project-page-view"]) {
-    let handle = cohostLoaderState["project-page-view"].pageHandle;
+    let handle = cohostLoaderState["project-page-view"].project.handle;
 
     fetch(`https://cohost.org/api/v1/project/${handle}/following`).then(r => r.json()).then(followStatus => {
         let followButton = document.querySelector('.justify-end').querySelector('button')
